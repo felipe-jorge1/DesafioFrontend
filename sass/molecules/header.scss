@@ -6,7 +6,8 @@
     height: 120px;
     background-color: $primary-color;
 }
-@media screen and (min-width: $tablet){
+
+@media screen and (min-width: $desktop){
     .main-header{
         height: 400px;
         top: -14px;
