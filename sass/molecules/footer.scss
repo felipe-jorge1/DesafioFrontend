@@ -1,0 +1,50 @@
+.footer{
+    padding-top: 50px;
+    text-align: center;
+
+    &__container{
+        display:block;
+    }
+
+    &__logo{
+        top: 32px;
+        width: 163px;
+        height: 45px;
+    }
+
+    &__sublogo{
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        color: $menu-color;
+        padding-right: 3px;
+        font-weight: 400;
+        letter-spacing: .1em;
+    }
+}
+.footer__text{
+    font-size: 11px;
+    color: $footer-text;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+@media screen and (min-width: $desktop){
+    .footer{
+        
+        &__container{
+            display: flex;
+            justify-content: center;
+        }
+        &__sublogo{
+            padding-top: 6px;
+            padding-left: 3px;
+        }
+        
+    }
+    .footer__text{
+        padding-right: 300px;
+        padding-left: 300px;
+        padding-bottom: 30px;
+    }
+
+}

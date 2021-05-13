@@ -1,0 +1,97 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &__image-container{
+        height: 270px;
+        display: flex;
+        margin-bottom: 60px;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 0px 5px 16px 5px #000000;
+    }
+
+    &__text-container{
+        background-color: $bg-cards;
+        border-radius: 0 0 15px 15px;
+        border: 1px solid $border-cards;
+        border-top: 5px solid $tertiary-color;
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+
+    &__text{
+        text-align: center;
+        font-weight: bold;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.image-moba{
+    background-image: url(../../images/cards1.jpg);
+    background-position: center center;
+}
+
+.image-fps{
+    background-image: url(../../images/cards2.jpg);
+    background-position: center bottom;
+}
+
+.image-btr{
+    background-image: url(../../images/cards3.png);
+    background-position: center center;
+}
+
+.image-fight{
+    background-image: url(../../images/cards4.jpg);
+    background-position: center center;
+}
+
+@media screen and (min-width: $tablet){
+    .card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        justify-content:center;
+    }
+}
+
+@media screen and (min-width: $desktop){
+    .card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: auto;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+        justify-content:center;
+        padding-left: 20%;
+        padding-right: 20%;
+
+        &__container{
+            max-width: 100%;
+        }
+
+        &__text-container{
+            width: 1000px;
+            height: 75px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        &__text{
+            text-align: center;
+        }
+
+        &__container:nth-child(even){
+            transform: translate(0, 100px);
+        }
+    } 
+}

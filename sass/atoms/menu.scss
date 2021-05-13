@@ -1,0 +1,40 @@
+.menu{
+    margin: 0;
+    padding: 0;
+    background: $menu-color;
+    border: 1px solid $menu-line;
+    text-align: center;
+
+    &__button{
+        font-family:'Montserrat', sans-serif;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+}
+.menu li{
+    display: block;
+    border-bottom: 1px;
+    padding: 5px;
+    margin: 5px;
+}
+.menu li:hover{
+    transition: .5s;
+    background: $second-color;
+}
+
+/*nav{
+    display: none;
+}*/
+
+@media screen and (min-width: $tablet){
+    .menu li{
+    display: inline-block;
+    }
+}
+
+/*@media screen and (min-width: $desktop){
+    nav{
+        display: block;
+    }
+}*/

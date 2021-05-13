@@ -1,3 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+body {
+  background: #2a2b2a;
+  font-family: "Montserrat", sans-serif;
+}
 
+p {
+  color: #ced5d6;
+}
+
+.theme__why {
+  font-size: 35px;
+  color: #ced5d6;
+  border-left: 4px solid #d12727;
+  padding: 0 0 10px 20px;
+  margin: 0;
+}
+
+.theme__text {
+  padding: 80px;
+  margin-top: auto;
+}
+.theme__title {
+  font-size: 30px;
+  color: #ced5d6;
+  border-left: 4px solid #d12727;
+  padding: 10px 0 0 20px;
+  margin: 0 0 50px 0;
+}
+.theme__mark {
+  font-weight: bold;
+  color: #d12727;
+  font-size: 25px;
+  font-family: "Krona One", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(../../images/bg-slider.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position: 6% 12.8%;
+    background-size: 300px;
+  }
+
+  .slideshow__background {
+    background-image: url(../../images/bg-slider.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-position: 94% 12%;
+    background-size: 300px;
+  }
+
+  .theme {
+    padding-top: 15px;
+  }
+  .theme__text {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .theme__title {
+    border: 0;
+    padding-left: 0px;
+  }
+  .theme .theme__text .theme__why, .theme .theme__title {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1690px) {
+  body {
+    background-image: none;
+  }
+
+  .slideshow__background {
+    background-image: none;
+  }
+}
+.logo-valtech {
+  width: 130px;
+  height: 37px;
+  opacity: 0.68;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.sublogo {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-header {
+    text-align: center;
+  }
+
+  .logo-valtech {
+    top: 32px;
+    left: 836px;
+    width: 245px;
+    height: 64px;
+  }
+
+  .sublogo {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+.slider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-shadow: 0px 7px 16px -1px #000000;
+}
+.slider__text {
+  font-family: "Comfortaa", cursive;
+  text-align: left;
+  padding-top: 20px;
+  color: #ced5d6;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    border-radius: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider {
+    margin-top: 15px;
+    border-radius: 20px;
+    height: 486px;
+  }
+  .slider__text {
+    display: block;
+  }
+
+  .slideshow__container {
+    background-color: #2a2b2a;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 875px;
+    height: 520px;
+    border: 1px solid #ced5d6;
+    border-radius: 20px;
+  }
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  background: #ced5d6;
+  border: 1px solid #AFB5AE;
+  text-align: center;
+}
+.menu__button {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.menu li {
+  display: block;
+  border-bottom: 1px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.menu li:hover {
+  transition: 0.5s;
+  background: #94a9e2;
+}
+
+/*nav{
+    display: none;
+}*/
+@media screen and (min-width: 768px) {
+  .menu li {
+    display: inline-block;
+  }
+}
+/*@media screen and (min-width: $desktop){
+    nav{
+        display: block;
+    }
+}*/
+.main-header {
+  height: 400px;
+  top: -14px;
+  left: -9px;
+  width: 100%;
+  height: 120px;
+  background-color: #2b56ce;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-header {
+    height: 400px;
+    top: -14px;
+    left: -9px;
+    width: 100%;
+    height: 150px;
+    background-color: #2b56ce;
+  }
+}
+.banner {
+  display: flex;
+  background-image: url(../images/share_dare_care.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  border-top: 5px solid #2b56ce;
+  box-shadow: 0px 3px 16px 5px #000000;
+  opacity: 0.7;
+}
+.banner__container {
+  width: 100%;
+  padding-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+
+.banner__text {
+  font-size: 30px;
+  letter-spacing: 1.5px;
+}
+
+.banner__text span {
+  color: #2b56ce;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    display: flex;
+  }
+  .banner__container {
+    width: 100%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+  }
+
+  .banner__text {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.card__image-container {
+  height: 270px;
+  display: flex;
+  margin-bottom: 60px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 5px 16px 5px #000000;
+}
+.card__text-container {
+  background-color: #242524;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid #191a19;
+  border-top: 5px solid #d12727;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+.card__text {
+  text-align: center;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.image-moba {
+  background-image: url(../../images/cards1.jpg);
+  background-position: center center;
+}
+
+.image-fps {
+  background-image: url(../../images/cards2.jpg);
+  background-position: center bottom;
+}
+
+.image-btr {
+  background-image: url(../../images/cards3.png);
+  background-position: center center;
+}
+
+.image-fight {
+  background-image: url(../../images/cards4.jpg);
+  background-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .card__container {
+    max-width: 100%;
+  }
+  .card__text-container {
+    width: 1000px;
+    height: 75px;
+    max-width: 100%;
+    height: auto;
+  }
+  .card__text {
+    text-align: center;
+  }
+  .card__container:nth-child(even) {
+    transform: translate(0, 100px);
+  }
+}
+.footer {
+  padding-top: 50px;
+  text-align: center;
+}
+.footer__container {
+  display: block;
+}
+.footer__logo {
+  top: 32px;
+  width: 163px;
+  height: 45px;
+}
+.footer__sublogo {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #ced5d6;
+  padding-right: 3px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.footer__text {
+  font-size: 11px;
+  color: #616161;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__sublogo {
+    padding-top: 6px;
+    padding-left: 3px;
+  }
+
+  .footer__text {
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-bottom: 30px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
