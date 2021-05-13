@@ -10,18 +10,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
-
 </head>
 
 <body>
     <header class="main-header">
         <div>
-            <a href="index.html">
-                <img src="images/logo.png" alt="logo valtech" class="logo-valtech">
+            <a href="https://www.valtech.com/pt-br/">
+                <img class="logo-valtech" src="images/logo.png" alt="logo valtech">
             </a>
             <h2 class="sublogo">desafio <b>front-end</b></h2>
         </div>
     </header>
+
     <nav>
         <ul class="menu">
             <a href="#" class="menu__button">
@@ -40,38 +40,69 @@
     </nav>
     
     <section class="slideshow">
-        <div class="slideshow-container">
-            <img class="slider" src="images/esports.jpeg"/>
-            <p class="slider__text">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        <div class="slideshow__background">
+            <div class="slideshow__container">
+                <img class="slider" src="images/esports.jpeg" alt="imagem do slider">
+                <p class="slider__text">Com o público de eSports em constante crescimento, a comunidade dos Massive Online Battle Arenas parece ainda mais forte. ("Staples center" Partida entre SKT vs RYL, finais do Worlds Championship 2013 de League of Legends).</p>
+            </div>
+        </div>     
+    </section>
+
+    <section class="theme">
+        <div class="theme__text">
+            <h1 class="theme__why"><strong>Why</strong></h1>
+            <h2 class="theme__title">eSports ?</h2>
+            <p><span class="theme__mark">“</span> Os eSports atualmente só são considerados como modalidade de competição quando envolvem a disputa entre duas ou mais pessoas, sejam em disputas individuais ou equipe contra equipe, em partidas que podem tanto acontecer presencialmente, com os atletas em um mesmo local físico ou online.</p>
         </div>
     </section>
 
-    <section>
-
-        <h1></h1>
-        <p></p>
-        
-        <article>
-            <img>
-            <p></p>
+    <section class="card">
+        <article class="card__container">
+            <div class="card__image-container image-moba">
+                <div class="card__text-container">
+                    <p class="card__text">MOBA: estilo de maior apelo entre os fãs de Esports, o MOBA (Multiplayer Online Battle Arena).</p>
+                </div>
+            </div>
         </article>
 
-        <article>
-            <img>
-            <p></p>
+        <article class="card__container">
+            <div class="card__image-container image-fps">
+                <div class="card__text-container">
+                    <p class="card__text">FPS: (First Person Shooter), ou Tiro em Primeira Pessoa, consiste na vitória sobre o oponente seja pelo cumprimento de uma missão.</p>
+                </div>
+            </div>
         </article>
 
-        <article>
-            <img>
-            <p></p>
+        <article class="card__container">
+            <div class="card__image-container image-btr">
+                <div class="card__text-container">
+                    <p class="card__text">BATTLE ROYALE: declarado vencedor o jogador ou grupo de jogadores que sobreviverem aos demais adversários.</p>
+                </div>
+            </div>
         </article>
 
-        <article>
-            <img>
-            <p></p>
+        <article class="card__container">
+            <div class="card__image-container image-fight">
+                <div class="card__text-container">
+                    <p class="card__text">Fighting: trazem como objetivo descer a porrada no seu oponente até que seus pontos de vida cheguem ao zero.</p>
+                </div>
+            </div>
         </article>
-
     </section>
-</body>
+    
+    <section class="banner">
+        <div class="banner__container">
+            <p class="banner__text">share<span>_</span> dare<span>_</span> care<span>_</span></p>
+        </div>
+    </section>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <img src="images/logo.png" alt="valtech logo" class="footer__logo">
+            <h2 class="footer__sublogo">desafio <b>front-end</b></h2>
+        </div>
+        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus maximus condimentum. Sed viverra nisl mauris, eget dapibus tellus ornare eget. Maecenas interdum, est id auctor sodales, nulla libero gravida tortor, nec viverra nulla dui non nisl. In pharetra, nulla eu dignissim tempor, purus nisl placerat massa, feugiat dictum ante purus in massa.</p>
+    </footer>
+
+</body>
 </html>

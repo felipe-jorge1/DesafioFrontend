@@ -22,11 +22,19 @@
     transition: .5s;
     background: $second-color;
 }
+
 /*nav{
-    visibility: hidden;
+    display: none;
 }*/
+
 @media screen and (min-width: $tablet){
     .menu li{
     display: inline-block;
     }
 }
+
+/*@media screen and (min-width: $desktop){
+    nav{
+        display: block;
+    }
+}*/
